@@ -1,4 +1,11 @@
 /* Vitrine de projetos: complementa estudo.css (mesma identidade dos estudos de caso). */
+
+/* Seletor de idioma, na mesma altura do botão de tema. */
+.idiomas { display: flex; height: 36px; padding: 3px; gap: 2px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
+.idiomas button { font: 500 12px/1 var(--mono); padding: 0 9px; border: 0; border-radius: 999px; background: transparent; color: var(--muted); cursor: pointer; }
+.idiomas button:hover { color: var(--text); }
+.idiomas button[aria-pressed="true"] { background: var(--accent-2); color: var(--on-accent, #fff); }
+@media (max-width: 520px) { .topo nav .opcional { display: none; } }
 .abertura h1 { max-width: 16ch; }
 .sobre { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 40px; align-items: end; }
 .sobre .lead { margin-bottom: 0; }

@@ -8,6 +8,9 @@
   <meta property="og:title" content="Larissa Antunez · Vitrine de projetos">
   <meta property="og:description" content="Painéis comerciais, dados e automação: estudos de caso com demonstração ao vivo.">
   <meta property="og:image" content="assets/projetos/diagnostico-comercial.jpg">
+  <link rel="alternate" hreflang="pt-BR" href="https://lariantunez.github.io/Vitrine-de-projetos/?lang=pt">
+  <link rel="alternate" hreflang="en" href="https://lariantunez.github.io/Vitrine-de-projetos/?lang=en">
+  <link rel="alternate" hreflang="es" href="https://lariantunez.github.io/Vitrine-de-projetos/?lang=es">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -19,8 +22,13 @@
     <div class="wrap">
       <a class="marca" href="#inicio"><i></i>Larissa Antunez</a>
       <nav>
-        <a class="opcional" href="#projetos">Projetos</a>
+        <a class="opcional" href="#projetos" data-i18n="nav.projetos">Projetos</a>
         <a href="https://github.com/lariantunez">GitHub</a>
+        <div class="idiomas" role="group" aria-label="Idioma" data-i18n-aria="idioma">
+          <button type="button" data-idioma="pt" aria-pressed="true" title="Português">PT</button>
+          <button type="button" data-idioma="en" aria-pressed="false" title="English">EN</button>
+          <button type="button" data-idioma="es" aria-pressed="false" title="Español">ES</button>
+        </div>
         <button class="btn-tema" id="tema" type="button" aria-label="Trocar tema">☀</button>
       </nav>
       <span class="progresso"></span>
@@ -30,12 +38,12 @@
   <main id="inicio">
     <section class="abertura">
       <div class="wrap">
-        <span class="selo-topo"><b>●</b> Analytics &amp; Desenvolvimento</span>
-        <h1>Dados que viram <em>decisão</em>, sem planilha no caminho.</h1>
+        <span class="selo-topo"><b>●</b> <span data-i18n="assinatura">Analytics &amp; Desenvolvimento</span></span>
+        <h1 data-i18n="abertura.titulo">Dados que viram <em>decisão</em>, sem planilha no caminho.</h1>
         <div class="sobre">
-          <p class="lead">Construo painéis e automações para áreas comerciais e de RH: do mapeamento das bases no ERP à modelagem, ao banco na nuvem, ao painel interativo e à validação número a número contra a fonte oficial. Cada projeto abaixo tem um estudo de caso e uma demonstração que você pode usar, com dados fictícios.</p>
+          <p class="lead" data-i18n="abertura.texto">Construo painéis e automações para áreas comerciais e de RH: do mapeamento das bases no ERP à modelagem, ao banco na nuvem, ao painel interativo e à validação número a número contra a fonte oficial. Cada projeto abaixo tem um estudo de caso e uma demonstração que você pode usar, com dados fictícios.</p>
           <div class="competencias">
-            <span>Modelagem de dados</span><span>Node.js</span><span>MongoDB Atlas</span><span>JavaScript</span><span>Google Apps Script</span><span>APIs (WhatsApp Cloud)</span><span>ETL e validação</span><span>Deploy (Koyeb, Docker, Pages)</span>
+            <span data-i18n="comp.modelagem">Modelagem de dados</span><span>Node.js</span><span>MongoDB Atlas</span><span>JavaScript</span><span>Google Apps Script</span><span>APIs (WhatsApp Cloud)</span><span data-i18n="comp.etl">ETL e validação</span><span>Deploy (Koyeb, Docker, Pages)</span>
           </div>
         </div>
       </div>
@@ -43,15 +51,15 @@
 
     <section class="secao" id="destaque">
       <div class="wrap">
-        <div class="secao-cab"><div><span class="rotulo-cap">Projeto em destaque</span><h2>Do ERP ao painel 24/7.</h2></div></div>
+        <div class="secao-cab"><div><span class="rotulo-cap" data-i18n="destaque.rotulo">Projeto em destaque</span><h2 data-i18n="destaque.titulo">Do ERP ao painel 24/7.</h2></div></div>
         <article class="destaque-projeto" style="--cor-e:#6aa0e0;--cor-c:#2f62a0">
-          <a class="foto" href="https://lariantunez.github.io/Diagnostico-Comercial/"><img src="assets/projetos/diagnostico-comercial.jpg" alt="Visão geral do painel Diagnóstico Comercial com dados fictícios" width="960" height="600"></a>
+          <a class="foto" href="https://lariantunez.github.io/Diagnostico-Comercial/"><img src="assets/projetos/diagnostico-comercial.jpg" alt="Visão geral do painel Diagnóstico Comercial com dados fictícios" data-i18n-alt="diag.alt" width="960" height="600"></a>
           <div class="corpo">
-            <span class="categoria">Painel comercial · Sell-in</span>
-            <h3>Diagnóstico Comercial</h3>
-            <p>Doze extrações de ERP e BI viraram um diagnóstico confiável: modelagem fato/dimensão, pipeline de 11 etapas, um painel que calcula tudo no navegador, validação contra o faturamento oficial nos 37 meses e implantação na nuvem com link secreto.</p>
-            <div class="tags"><span>Modelo estrela</span><span>Node.js</span><span>MongoDB Atlas</span><span>JS + SVG</span><span>Koyeb</span></div>
-            <div class="links"><a href="https://lariantunez.github.io/Diagnostico-Comercial/">Estudo de caso</a><a href="https://lariantunez.github.io/Diagnostico-Comercial/painel/">Abrir painel</a><a href="https://github.com/lariantunez/Diagnostico-Comercial">Código</a></div>
+            <span class="categoria" data-i18n="diag.cat">Painel comercial · Sell-in</span>
+            <h3 data-i18n="diag.nome">Diagnóstico Comercial</h3>
+            <p data-i18n="diag.texto">Doze extrações de ERP e BI viraram um diagnóstico confiável: modelagem fato/dimensão, pipeline de 11 etapas, um painel que calcula tudo no navegador, validação contra o faturamento oficial nos 37 meses e implantação na nuvem com link secreto.</p>
+            <div class="tags"><span data-i18n="tag.estrela">Modelo estrela</span><span>Node.js</span><span>MongoDB Atlas</span><span>JS + SVG</span><span>Koyeb</span></div>
+            <div class="links"><a href="https://lariantunez.github.io/Diagnostico-Comercial/" data-i18n="link.estudo">Estudo de caso</a><a href="https://lariantunez.github.io/Diagnostico-Comercial/painel/" data-i18n="link.abrirPainel">Abrir painel</a><a href="https://github.com/lariantunez/Diagnostico-Comercial" data-i18n="link.codigo">Código</a></div>
           </div>
         </article>
       </div>
@@ -60,83 +68,83 @@
     <section class="secao" id="projetos">
       <div class="wrap">
         <div class="secao-cab">
-          <div><span class="rotulo-cap">Projetos</span><h2>Mais projetos, cada um com sua história.</h2></div>
-          <div class="filtros" role="group" aria-label="Filtrar projetos">
-            <button type="button" aria-pressed="true" data-filtro="todos">Todos</button>
-            <button type="button" aria-pressed="false" data-filtro="vendas">Painéis de vendas</button>
-            <button type="button" aria-pressed="false" data-filtro="ferramentas">Ferramentas internas</button>
-            <button type="button" aria-pressed="false" data-filtro="automacao">Automação</button>
+          <div><span class="rotulo-cap" data-i18n="nav.projetos">Projetos</span><h2 data-i18n="projetos.titulo">Mais projetos, cada um com sua história.</h2></div>
+          <div class="filtros" role="group" aria-label="Filtrar projetos" data-i18n-aria="filtros">
+            <button type="button" aria-pressed="true" data-filtro="todos" data-i18n="filtro.todos">Todos</button>
+            <button type="button" aria-pressed="false" data-filtro="vendas" data-i18n="filtro.vendas">Painéis de vendas</button>
+            <button type="button" aria-pressed="false" data-filtro="ferramentas" data-i18n="filtro.ferramentas">Ferramentas internas</button>
+            <button type="button" aria-pressed="false" data-filtro="automacao" data-i18n="filtro.automacao">Automação</button>
           </div>
         </div>
         <div class="projetos">
           <article class="projeto" data-cat="vendas" style="--cor-e:#c8f135;--cor-c:#5f8f00">
-            <a class="foto" href="https://lariantunez.github.io/painel-sellout-varejo/"><img src="assets/projetos/painel-sellout-varejo.jpg" alt="Painel Vitta: vendas de sell out por mês" loading="lazy" width="960" height="600"></a>
+            <a class="foto" href="https://lariantunez.github.io/painel-sellout-varejo/"><img src="assets/projetos/painel-sellout-varejo.jpg" alt="Painel Vitta: vendas de sell out por mês" data-i18n-alt="vitta.alt" loading="lazy" width="960" height="600"></a>
             <div class="corpo">
-              <span class="categoria">Sell out e estoque</span>
-              <h3>Painel Vitta</h3>
-              <p>Substituiu planilhas dinâmicas por importação controlada, campos pré-calculados e cache. O capítulo de desempenho conta como o fim dos timeouts veio da entrada, não da tela.</p>
+              <span class="categoria" data-i18n="cat.sellout">Sell out e estoque</span>
+              <h3 data-i18n="vitta.nome">Painel Vitta</h3>
+              <p data-i18n="vitta.texto">Substituiu planilhas dinâmicas por importação controlada, campos pré-calculados e cache. O capítulo de desempenho conta como o fim dos timeouts veio da entrada, não da tela.</p>
               <div class="tags"><span>Express</span><span>MongoDB</span><span>Cache</span><span>Docker</span></div>
-              <div class="links"><a href="https://lariantunez.github.io/painel-sellout-varejo/">Estudo de caso</a><a href="https://lariantunez.github.io/painel-sellout-varejo/painel/">Painel</a><a href="https://github.com/lariantunez/painel-sellout-varejo">Código</a></div>
+              <div class="links"><a href="https://lariantunez.github.io/painel-sellout-varejo/" data-i18n="link.estudo">Estudo de caso</a><a href="https://lariantunez.github.io/painel-sellout-varejo/painel/" data-i18n="link.painel">Painel</a><a href="https://github.com/lariantunez/painel-sellout-varejo" data-i18n="link.codigo">Código</a></div>
             </div>
           </article>
           <article class="projeto" data-cat="vendas" style="--cor-e:#4fffb0;--cor-c:#007a5a">
-            <a class="foto" href="https://lariantunez.github.io/painel-sellout-de-para/"><img src="assets/projetos/painel-sellout-de-para.jpg" alt="Painel Atlas: tela de importação com de-para de produtos" loading="lazy" width="960" height="600"></a>
+            <a class="foto" href="https://lariantunez.github.io/painel-sellout-de-para/"><img src="assets/projetos/painel-sellout-de-para.jpg" alt="Painel Atlas: tela de importação com de-para de produtos" data-i18n-alt="atlas.alt" loading="lazy" width="960" height="600"></a>
             <div class="corpo">
-              <span class="categoria">Sell out e estoque</span>
-              <h3>Painel Atlas</h3>
-              <p>Um painel novo em dois dias, reaproveitando a base do Vitta. O desafio real: um de-para intermediário para traduzir o código de produto do cliente para o da indústria.</p>
-              <div class="tags"><span>De-para de GTIN</span><span>XLSX no navegador</span><span>MongoDB</span></div>
-              <div class="links"><a href="https://lariantunez.github.io/painel-sellout-de-para/">Estudo de caso</a><a href="https://lariantunez.github.io/painel-sellout-de-para/painel/">Painel</a><a href="https://github.com/lariantunez/painel-sellout-de-para">Código</a></div>
+              <span class="categoria" data-i18n="cat.sellout">Sell out e estoque</span>
+              <h3 data-i18n="atlas.nome">Painel Atlas</h3>
+              <p data-i18n="atlas.texto">Um painel novo em dois dias, reaproveitando a base do Vitta. O desafio real: um de-para intermediário para traduzir o código de produto do cliente para o da indústria.</p>
+              <div class="tags"><span data-i18n="tag.gtin">De-para de GTIN</span><span data-i18n="tag.xlsx">XLSX no navegador</span><span>MongoDB</span></div>
+              <div class="links"><a href="https://lariantunez.github.io/painel-sellout-de-para/" data-i18n="link.estudo">Estudo de caso</a><a href="https://lariantunez.github.io/painel-sellout-de-para/painel/" data-i18n="link.painel">Painel</a><a href="https://github.com/lariantunez/painel-sellout-de-para" data-i18n="link.codigo">Código</a></div>
             </div>
           </article>
           <article class="projeto" data-cat="vendas" style="--cor-e:#38bdf8;--cor-c:#0369a1">
-            <a class="foto" href="https://lariantunez.github.io/painel-contagem-estoque/"><img src="assets/projetos/painel-contagem-estoque.jpg" alt="Painel Bella: aba de estoque" loading="lazy" width="960" height="600"></a>
+            <a class="foto" href="https://lariantunez.github.io/painel-contagem-estoque/"><img src="assets/projetos/painel-contagem-estoque.jpg" alt="Painel Bella: aba de estoque" data-i18n-alt="bella.alt" loading="lazy" width="960" height="600"></a>
             <div class="corpo">
-              <span class="categoria">Sell out e estoque</span>
-              <h3>Painel Bella</h3>
-              <p>Quando o estoque vem de contagem manual nas lojas: o painel gera a planilha de contagem já pronta, valida o que volta e mostra a posição mais recente ao lado do sell out.</p>
-              <div class="tags"><span>Modelos dinâmicos</span><span>Validação</span><span>MongoDB</span></div>
-              <div class="links"><a href="https://lariantunez.github.io/painel-contagem-estoque/">Estudo de caso</a><a href="https://lariantunez.github.io/painel-contagem-estoque/painel/">Painel</a><a href="https://github.com/lariantunez/painel-contagem-estoque">Código</a></div>
+              <span class="categoria" data-i18n="cat.sellout">Sell out e estoque</span>
+              <h3 data-i18n="bella.nome">Painel Bella</h3>
+              <p data-i18n="bella.texto">Quando o estoque vem de contagem manual nas lojas: o painel gera a planilha de contagem já pronta, valida o que volta e mostra a posição mais recente ao lado do sell out.</p>
+              <div class="tags"><span data-i18n="tag.modelos">Modelos dinâmicos</span><span data-i18n="tag.validacao">Validação</span><span>MongoDB</span></div>
+              <div class="links"><a href="https://lariantunez.github.io/painel-contagem-estoque/" data-i18n="link.estudo">Estudo de caso</a><a href="https://lariantunez.github.io/painel-contagem-estoque/painel/" data-i18n="link.painel">Painel</a><a href="https://github.com/lariantunez/painel-contagem-estoque" data-i18n="link.codigo">Código</a></div>
             </div>
           </article>
           <article class="projeto" data-cat="vendas" style="--cor-e:#8c9eff;--cor-c:#3949ab" id="cartao-sellout">
-            <a class="foto" href="https://lariantunez.github.io/painel-acompanhamento-relatorios-sellout/"><img src="assets/projetos/painel-acompanhamento-relatorios-sellout.jpg" alt="Controle Sell Out" loading="lazy" width="960" height="600"></a>
+            <a class="foto" href="https://lariantunez.github.io/painel-acompanhamento-relatorios-sellout/"><img src="assets/projetos/painel-acompanhamento-relatorios-sellout.jpg" alt="Controle Sell Out" data-i18n-alt="controle.nome" loading="lazy" width="960" height="600"></a>
             <div class="corpo">
-              <span class="categoria">Acompanhamento</span>
-              <h3>Controle Sell Out</h3>
-              <p>Da planilha de controle ao painel de cobrança: acompanha mês a mês quais lojas já mandaram o relatório de sell out, o que está no prazo e o que já está no BI, e transforma pendências em cobrança por WhatsApp e e-mail.</p>
+              <span class="categoria" data-i18n="cat.acompanhamento">Acompanhamento</span>
+              <h3 data-i18n="controle.nome">Controle Sell Out</h3>
+              <p data-i18n="controle.texto">Da planilha de controle ao painel de cobrança: acompanha mês a mês quais lojas já mandaram o relatório de sell out, o que está no prazo e o que já está no BI, e transforma pendências em cobrança por WhatsApp e e-mail.</p>
               <div class="tags"><span>Google Apps Script</span><span>Google Sheets</span><span>SheetJS</span></div>
-              <div class="links"><a href="https://lariantunez.github.io/painel-acompanhamento-relatorios-sellout/">Estudo de caso</a><a href="https://lariantunez.github.io/painel-acompanhamento-relatorios-sellout/painel/">Painel</a><a href="https://github.com/lariantunez/painel-acompanhamento-relatorios-sellout">Código</a></div>
+              <div class="links"><a href="https://lariantunez.github.io/painel-acompanhamento-relatorios-sellout/" data-i18n="link.estudo">Estudo de caso</a><a href="https://lariantunez.github.io/painel-acompanhamento-relatorios-sellout/painel/" data-i18n="link.painel">Painel</a><a href="https://github.com/lariantunez/painel-acompanhamento-relatorios-sellout" data-i18n="link.codigo">Código</a></div>
             </div>
           </article>
           <article class="projeto" data-cat="ferramentas" style="--cor-e:#a78bfa;--cor-c:#6d4fc2" id="cartao-central">
-            <a class="foto" href="https://lariantunez.github.io/central-de-paineis/"><img src="assets/projetos/central-de-paineis.jpg" alt="Central de Painéis" loading="lazy" width="960" height="600"></a>
+            <a class="foto" href="https://lariantunez.github.io/central-de-paineis/"><img src="assets/projetos/central-de-paineis.jpg" alt="Central de Painéis" data-i18n-alt="central.nome" loading="lazy" width="960" height="600"></a>
             <div class="corpo">
               <span class="categoria">Portal</span>
-              <h3>Central de Painéis</h3>
-              <p>Uma porta de entrada para todos os painéis: a home desenha um cartão por painel a partir de uma lista, e a área administrativa cadastra, edita e remove painéis sem mexer no código.</p>
+              <h3 data-i18n="central.nome">Central de Painéis</h3>
+              <p data-i18n="central.texto">Uma porta de entrada para todos os painéis: a home desenha um cartão por painel a partir de uma lista, e a área administrativa cadastra, edita e remove painéis sem mexer no código.</p>
               <div class="tags"><span>JavaScript</span><span>JSON</span><span>GitHub Actions</span></div>
-              <div class="links"><a href="https://lariantunez.github.io/central-de-paineis/">Estudo de caso</a><a href="https://lariantunez.github.io/central-de-paineis/app/">Central</a><a href="https://github.com/lariantunez/central-de-paineis">Código</a></div>
+              <div class="links"><a href="https://lariantunez.github.io/central-de-paineis/" data-i18n="link.estudo">Estudo de caso</a><a href="https://lariantunez.github.io/central-de-paineis/app/" data-i18n="link.central">Central</a><a href="https://github.com/lariantunez/central-de-paineis" data-i18n="link.codigo">Código</a></div>
             </div>
           </article>
           <article class="projeto" data-cat="ferramentas" style="--cor-e:#e39a4b;--cor-c:#9a5b12" id="cartao-contratacao">
-            <a class="foto" href="https://lariantunez.github.io/painel-de-contratacao/"><img src="assets/projetos/painel-de-contratacao.jpg" alt="Painel de Contratação" loading="lazy" width="960" height="600"></a>
+            <a class="foto" href="https://lariantunez.github.io/painel-de-contratacao/"><img src="assets/projetos/painel-de-contratacao.jpg" alt="Painel de Contratação" data-i18n-alt="contratacao.nome" loading="lazy" width="960" height="600"></a>
             <div class="corpo">
-              <span class="categoria">RH</span>
-              <h3>Painel de Contratação</h3>
-              <p>Do currículo à contratação, sem perder o roteiro: 8 etapas num quadro, semáforo de prazo para a etapa que mais trava, indicadores, ranking por gestor e cobrança por e-mail.</p>
-              <div class="tags"><span>JavaScript</span><span>Kanban</span><span>Indicadores</span></div>
-              <div class="links"><a href="https://lariantunez.github.io/painel-de-contratacao/">Estudo de caso</a><a href="https://lariantunez.github.io/painel-de-contratacao/painel/">Painel</a><a href="https://github.com/lariantunez/painel-de-contratacao">Código</a></div>
+              <span class="categoria" data-i18n="cat.rh">RH</span>
+              <h3 data-i18n="contratacao.nome">Painel de Contratação</h3>
+              <p data-i18n="contratacao.texto">Do currículo à contratação, sem perder o roteiro: 8 etapas num quadro, semáforo de prazo para a etapa que mais trava, indicadores, ranking por gestor e cobrança por e-mail.</p>
+              <div class="tags"><span>JavaScript</span><span>Kanban</span><span data-i18n="tag.indicadores">Indicadores</span></div>
+              <div class="links"><a href="https://lariantunez.github.io/painel-de-contratacao/" data-i18n="link.estudo">Estudo de caso</a><a href="https://lariantunez.github.io/painel-de-contratacao/painel/" data-i18n="link.painel">Painel</a><a href="https://github.com/lariantunez/painel-de-contratacao" data-i18n="link.codigo">Código</a></div>
             </div>
           </article>
           <article class="projeto" data-cat="automacao" style="--cor-e:#00a884;--cor-c:#007a62" id="cartao-bot">
-            <a class="foto" href="https://lariantunez.github.io/Bot-RH-Meta-Painel/"><img src="assets/projetos/Bot-RH-Meta-Painel.jpg" alt="Bot RH Meta" loading="lazy" width="960" height="600"></a>
+            <a class="foto" href="https://lariantunez.github.io/Bot-RH-Meta-Painel/"><img src="assets/projetos/Bot-RH-Meta-Painel.jpg" alt="Bot RH Meta" data-i18n-alt="bot.nome" loading="lazy" width="960" height="600"></a>
             <div class="corpo">
-              <span class="categoria">Automação · RH</span>
-              <h3>Bot RH Meta</h3>
-              <p>O RH no WhatsApp: o robô responde ponto, folha e benefícios com tutoriais passo a passo, e quando precisa de uma pessoa a conversa entra numa fila que o RH atende num painel parecido com o WhatsApp Web.</p>
+              <span class="categoria" data-i18n="cat.automacaoRh">Automação · RH</span>
+              <h3 data-i18n="bot.nome">Bot RH Meta</h3>
+              <p data-i18n="bot.texto">O RH no WhatsApp: o robô responde ponto, folha e benefícios com tutoriais passo a passo, e quando precisa de uma pessoa a conversa entra numa fila que o RH atende num painel parecido com o WhatsApp Web.</p>
               <div class="tags"><span>WhatsApp Cloud API</span><span>Node.js</span><span>MongoDB</span></div>
-              <div class="links"><a href="https://lariantunez.github.io/Bot-RH-Meta-Painel/">Estudo de caso</a><a href="https://lariantunez.github.io/Bot-RH-Meta-Painel/painel/">Painel</a><a href="https://github.com/lariantunez/Bot-RH-Meta-Painel">Código</a></div>
+              <div class="links"><a href="https://lariantunez.github.io/Bot-RH-Meta-Painel/" data-i18n="link.estudo">Estudo de caso</a><a href="https://lariantunez.github.io/Bot-RH-Meta-Painel/painel/" data-i18n="link.painel">Painel</a><a href="https://github.com/lariantunez/Bot-RH-Meta-Painel" data-i18n="link.codigo">Código</a></div>
             </div>
           </article>
         </div>
@@ -146,10 +154,10 @@
     <section class="secao">
       <div class="wrap">
         <div class="encerramento">
-          <span class="rotulo-cap">Sobre as demonstrações</span>
-          <h2>Tudo aqui pode ser clicado, e nada é dado real.</h2>
-          <p class="texto">Os projetos rodam em produção com dados das empresas. Nestas versões, o código das telas é o mesmo, mas os dados são fictícios, gerados para cada demonstração. Nenhum cliente, valor ou pessoa real aparece.</p>
-          <div class="acoes"><a class="btn primario" href="https://lariantunez.github.io/Diagnostico-Comercial/">Começar pelo destaque →</a><a class="btn" href="https://github.com/lariantunez">Ver o GitHub</a></div>
+          <span class="rotulo-cap" data-i18n="fim.rotulo">Sobre as demonstrações</span>
+          <h2 data-i18n="fim.titulo">Tudo aqui pode ser clicado, e nada é dado real.</h2>
+          <p class="texto" data-i18n="fim.texto">Os projetos rodam em produção com dados das empresas. Nestas versões, o código das telas é o mesmo, mas os dados são fictícios, gerados para cada demonstração. Nenhum cliente, valor ou pessoa real aparece.</p>
+          <div class="acoes"><a class="btn primario" href="https://lariantunez.github.io/Diagnostico-Comercial/" data-i18n="fim.destaque">Começar pelo destaque →</a><a class="btn" href="https://github.com/lariantunez" data-i18n="fim.github">Ver o GitHub</a></div>
         </div>
       </div>
     </section>
@@ -157,11 +165,12 @@
 
   <footer>
     <div class="wrap">
-      <span><strong>Larissa Antunez</strong> · Analytics &amp; Desenvolvimento</span>
-      <span>Estudos de caso com demonstração ao vivo</span>
+      <span><strong>Larissa Antunez</strong> · <span data-i18n="assinatura">Analytics &amp; Desenvolvimento</span></span>
+      <span data-i18n="rodape">Estudos de caso com demonstração ao vivo</span>
     </div>
   </footer>
   <script src="assets/estudo.js"></script>
+  <script src="assets/idiomas.js"></script>
   <script>
     // Filtro dos cartões por tipo de projeto.
     (() => {
