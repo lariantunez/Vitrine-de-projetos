@@ -156,8 +156,11 @@
   let salvo = null;
   try { salvo = localStorage.getItem(CHAVE); } catch { /* sem armazenamento */ }
   const doNavegador = (navigator.language || "pt").slice(0, 2).toLowerCase();
-  const inicial = valido(new URLSearchParams(location.search).get("lang")) || valido(salvo) || valido(doNavegador) || "en";
+  const doLink = valido(new URLSearchParams(location.search).get("lang"));
+  const inicial = doLink || valido(salvo) || valido(doNavegador) || "en";
   if (inicial !== "pt") aplicar(inicial);
+  // Idioma vindo do link fica guardado, para os estudos de caso abrirem no mesmo idioma.
+  if (doLink) try { localStorage.setItem(CHAVE, doLink); } catch { /* sem armazenamento */ }
 
   botoes.forEach((b) => b.addEventListener("click", () => {
     aplicar(b.dataset.idioma);
